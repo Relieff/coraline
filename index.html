@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os olhos de botões</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="site-wrapper">
+    <section id="parte1">
+    <!-- Canvas das estrelas -->
+    <canvas id="stars"></canvas>
+
+    <!-- Player de música flutuante -->
+    <div class="music-bar">
+        <div class="album-cover" id="music-btn">
+            <img src="WhatsApp Image 2026-03-14 at 23.49.43.jpeg" alt="Foto dela">
+        </div>
+        <input type="range" id="progress" value="0" min="0" max="100">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        <div class="controls">
+            <button id="prev" class="control-btn"><i class="fa-solid fa-backward"></i></button>
+            <button id="play-pause" class="control-btn"><i class="fa-solid fa-play"></i></button>
+            <button id="next" class="control-btn"><i class="fa-solid fa-forward"></i></button>
+            <button id="loop" class="control-btn"><i class="fa-solid fa-repeat"></i></button>
+        </div>
+    </div>
+
+    <!-- Primeira seção -->
+    <div class="container">
+        <h1 class="fade-in" style="animation-delay: 0.3s;"></h1>
+        <div class="translucent-box fade-in" style="animation-delay: 0.6s;">
+            As palavras nunca ditas são as que mais sinceras.
+        </div>
+        <div class="translucent-box fade-in" style="animation-delay: 0.9s;">
+            E essas são as mais sinceras que escrevi .
+        </div>
+    </div>
+
+    <!-- Cartas existentes + novas -->
+    <div class="letters-section">
+        <!-- Carta original que você escreveu -->
+        <div class="letter">
+            <h2>A Porta Pequena</h2>
+            <p>
+            Entre paredes comuns
+e dias que parecem iguais,
+existe sempre uma porta pequena
+que quase ninguém percebe.
+
+Ela fica escondida
+entre o que a gente mostra
+e o que a gente guarda.
+
+Alguns passam por ela
+sem nunca notar.
+
+Mas às vezes aparece alguém
+curioso o suficiente
+pra bater na madeira
+e perguntar:
+
+“tem alguém aí?”
+
+E mesmo quando a resposta demora,
+o silêncio já diz muita coisa.
+
+Porque algumas portas
+não foram feitas para serem arrombadas.
+
+Foram feitas
+para serem descobertas.
+        </div>
+
+    <div class="letter">
+            <h2>O Mundo do Outro Lado</h2>
+            <p>
+                Do outro lado da porta
+não existe perfeição.
+
+Existe medo,
+memórias que ainda doem,
+e histórias que ensinaram
+o coração a andar devagar.
+
+Algumas pessoas dizem
+que coragem é não sentir medo.
+
+Mas quem já passou por coisas de verdade
+sabe que coragem
+é sentir tudo
+e ainda assim continuar.
+
+Talvez por isso
+alguns corações parecem distantes.
+
+Não é frieza.
+
+É só alguém
+que aprendeu a sobreviver
+num mundo onde confiança
+já foi quebrada antes.
+        </div>
+
+    <div class="letter">
+            <h2>Os Botões e os Olhos</h2>
+            <p>
+                No mundo da Outra Mãe
+os olhos viram botões.
+
+Bonitos, perfeitos, brilhantes…
+mas incapazes de sentir.
+
+É um mundo confortável
+pra quem tem medo de sofrer.
+
+Mas também é um mundo
+onde nada é realmente real.
+
+Porque sentimentos de verdade
+não são perfeitos.
+
+Eles tremem.
+Eles erram.
+Eles demoram.
+
+E às vezes
+um coração que diz
+“eu não tenho coração”
+
+é só um coração
+que ainda está aprendendo
+a confiar de novo.
+        </div>
+
+<div class ="letter">
+            <h2>As Estrelas</h2>
+            <p>Quando a gente olha para as estrelas
+está vendo luz
+que viajou anos
+só para chegar até nós.
+
+Talvez sentimentos sejam assim também.
+
+Às vezes demoram.
+
+Às vezes parecem distantes.
+
+Mas isso não significa
+que não existam.
+
+Significa apenas
+que estão no caminho.
+
+E se algum dia
+você olhar para o céu
+e sentir que o universo é grande demais…
+
+lembre-se de uma coisa curiosa:
+
+até as estrelas mais distantes
+acabam encontrando
+os olhos de alguém.
+</div>
+
+<div class="letter">
+            <h2>O Silêncio Entre as Palavras</h2>
+            <p>
+                Existem pessoas
+que falam muito.
+
+E existem pessoas
+que aprenderam a esconder o que sentem
+entre pausas.
+
+Elas riem,
+fazem piadas,
+mudam de assunto,
+olham para o lado.
+
+Mas quem presta atenção
+percebe que no meio das palavras
+sempre existe um pequeno silêncio.
+
+E o silêncio
+às vezes conta histórias maiores
+do que qualquer frase.
+
+Talvez por isso algumas pessoas
+pareçam distantes.
+
+Não é porque não sentem.
+
+É porque um dia sentiram demais
+e descobriram
+que o mundo nem sempre é gentil
+com corações abertos.
+
+Então elas aprendem
+a falar com cuidado.
+
+A sentir com limites.
+
+A caminhar devagar
+num lugar onde antes
+corriam sem medo.
+
+</div>
+
+<div class="letter">
+            <h2>O Jardim Que Não Crescia</h2>
+            <p>
+                No outro lado da porta
+existia um jardim.
+
+Era bonito de longe.
+
+As flores tinham cores perfeitas,
+as folhas nunca caíam,
+e o vento sempre soprava
+na direção certa.
+
+Mas havia algo estranho ali.
+
+Nada mudava.
+
+Nenhuma pétala caía.
+Nenhuma flor nascia.
+
+Era um jardim que parecia vivo,
+mas não crescia.
+
+Porque coisas vivas
+precisam de tempo.
+
+Precisam de chuva,
+de sol,
+de dias bons
+e dias ruins.
+
+E talvez o coração humano
+seja parecido com um jardim.
+
+Ele não floresce
+quando tudo é perfeito.
+
+Ele floresce
+quando alguém tem paciência
+de esperar.
+
+</div>
+
+<div class="letter">
+            <h2>A Coragem de Coraline</h2>
+            <p>
+                Coraline não era corajosa
+porque não tinha medo.
+
+Ela tinha medo o tempo todo.
+
+Do escuro.
+Do silêncio.
+Do que existia atrás da porta.
+
+Mas mesmo assim
+ela abriu a porta.
+
+Mesmo assim
+ela atravessou o corredor.
+
+Mesmo assim
+ela decidiu enfrentar
+o que estava do outro lado.
+
+Talvez coragem
+seja exatamente isso.
+
+Não é sobre ser forte o tempo todo.
+
+É sobre continuar caminhando
+mesmo quando o coração
+diz para voltar.
+
+E talvez algumas pessoas
+se pareçam com Coraline
+mais do que imaginam.
+
+Porque quem já se machucou
+mas ainda tenta sentir algo
+mesmo com medo…
+
+já está sendo corajoso.
+
+</div>
+
+<div class="letter">
+            <h2>O Peso das Histórias Antigas</h2>
+            <p>
+                Todo mundo carrega histórias.
+
+Algumas são leves
+como folhas levadas pelo vento.
+
+Outras ficam guardadas
+como pedras no bolso.
+
+Histórias de confiança quebrada.
+De promessas vazias.
+De pessoas que partiram
+sem olhar para trás.
+
+Essas histórias não desaparecem.
+
+Elas ficam ali
+quietas
+no fundo da memória.
+
+E às vezes,
+quando alguém novo aparece…
+
+o coração pergunta:
+
+“E se acontecer de novo?”
+
+Então surgem os limites.
+As barreiras.
+Os passos lentos.
+
+Não porque a pessoa não quer sentir.
+
+Mas porque ela já sabe
+o quanto pode doer.
+
+</div>
+
+<div class="letter">
+            <h2>A Luz Que Demora</h2>
+            <p>
+                Existe algo curioso
+sobre a luz das estrelas.
+
+Algumas delas
+estão tão distantes
+que a luz que vemos hoje
+começou a viajar
+muito antes de nascermos.
+
+Isso significa
+que quando olhamos para o céu
+estamos vendo um passado
+que ainda está chegando.
+
+Talvez sentimentos
+sejam um pouco assim.
+
+Às vezes parecem distantes.
+
+Às vezes parecem impossíveis.
+
+Mas no silêncio do tempo
+algo continua viajando.
+
+Algo continua tentando chegar.
+
+E talvez um dia
+quando ninguém estiver esperando…
+
+a luz finalmente apareça.
+
+Porque algumas coisas
+não chegam rápido.
+
+Mas quando chegam
+fazem o universo inteiro
+parecer diferente.
+
+</div>
+
+<div class="letter">
+            <h2>O Gato Que Sabia Demais</h2>
+            <p>
+                Dizem que, em alguns lugares estranhos do universo,
+as histórias acabam se encontrando.
+
+Portas levam a corredores que levam a outros mundos.
+Espelhos viram caminhos.
+Tocas de coelho viram portais.
+
+E em algum ponto entre todos esses caminhos
+existe sempre um gato.
+
+Um gato que aparece quando quer.
+Que desaparece quando acha necessário.
+Que observa tudo
+como se entendesse coisas
+que os outros ainda estão tentando descobrir.
+
+Alguns o chamam de Cheshire.
+
+Outros dizem que ele não pertence
+a nenhum lugar específico.
+
+Ele só aparece
+quando alguém está perdido o suficiente
+para precisar de uma pergunta.
+
+Não uma resposta.
+
+Uma pergunta.
+
+Alice o encontrou primeiro.
+
+Ela estava andando por um lugar
+onde nada fazia sentido.
+
+As flores falavam,
+o tempo brigava com os relógios,
+e as regras pareciam ter sido escritas
+por alguém que gostava muito
+de confundir as pessoas.
+
+Alice olhou para o gato
+sentado tranquilamente em um galho
+e perguntou:
+
+“Qual caminho eu devo seguir?”
+
+O gato sorriu.
+
+Na verdade, ele sempre estava sorrindo.
+
+Às vezes só o sorriso ficava.
+
+E ele respondeu com uma pergunta simples:
+
+“Para onde você quer ir?”
+
+Alice pensou um pouco
+e respondeu algo honesto:
+
+“Eu não sei.”
+
+E então o gato disse algo
+que parecia simples
+mas carregava um universo inteiro dentro:
+
+“Então qualquer caminho serve.”
+
+Mas existem pessoas
+que não acreditam nisso.
+
+Pessoas que caminham
+procurando algo específico.
+
+Algo que talvez nem saibam explicar.
+
+Elas atravessam dias,
+memórias,
+cidades,
+conversas.
+
+Às vezes encontram portas pequenas.
+
+Às vezes encontram corredores longos.
+
+Às vezes encontram pessoas
+que parecem fazer o mundo
+ficar um pouco mais interessante.
+
+E de vez em quando,
+quando a noite fica silenciosa
+e o céu parece cheio de estrelas antigas…
+
+o gato aparece de novo.
+
+Sentado em algum lugar alto.
+
+Observando.
+
+Sorrindo.
+
+Talvez ele goste de observar pessoas curiosas.
+
+Pessoas que fazem perguntas.
+Pessoas que atravessam portas.
+Pessoas que ainda acreditam
+que existem mundos escondidos
+dentro das coisas simples.
+
+Porque o gato sabe uma coisa
+que poucos percebem:
+
+os caminhos mais interessantes
+nunca são os mais óbvios.
+
+Eles começam com coincidências estranhas.
+
+Uma conversa aleatória.
+
+Uma piada fora de lugar.
+
+Uma mensagem inesperada.
+
+E quando você percebe…
+
+já está caminhando por um caminho
+que não existia antes.
+
+Alice aprendeu algo importante naquele lugar.
+
+Nem todos os caminhos precisam ser entendidos
+logo no começo.
+
+Às vezes você só precisa caminhar um pouco
+para descobrir onde eles levam.
+
+E o gato?
+
+Bem…
+
+o gato sempre continua sorrindo.
+
+Porque ele sabe
+que algumas histórias não precisam de pressa.
+
+Algumas histórias são como estrelas:
+
+demoram a chegar,
+mas quando finalmente aparecem…
+
+iluminam o céu inteiro.
+
+E se algum dia
+em algum lugar silencioso
+entre pensamentos, músicas
+ou noites longas demais…
+
+você sentir
+que existe um caminho estranho
+se formando na sua frente,
+
+não se preocupe.
+
+Talvez seja só mais um daqueles caminhos
+que começam sem explicação.
+
+Talvez seja só mais uma história
+que decidiu acontecer.
+
+E se você olhar com atenção
+talvez veja algo curioso
+em algum canto da estrada:
+
+um gato.
+
+Sentado.
+
+Observando.
+
+Sorrindo.
+
+Como se já soubesse
+que a história
+ainda está só começando.
+
+</div>
+
+<div class="container">
+        <h1 class="fade-in" style="animation-delay: 0.3s;"></h1>
+        <div class="translucent-box fade-in" style="animation-delay: 0.6s;">
+            Entre portas escondidas, mundos estranhos e caminhos improváveis, algumas histórias começam do jeito mais simples possível: duas pessoas curiosas o suficiente para continuar conversando.
+        </div>
+        <div class="translucent-box fade-in" style="animation-delay: 0.9s;">
+            E talvez seja isso que o gato sempre soube — que as histórias mais interessantes nunca começam com certeza, mas com um pequeno passo em direção ao desconhecido.
+        </div>
+    </div>
+
+</section>
+
+    <audio id="music" src="House Of Balloons _ Glass Table Girls_spotdown.org.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
